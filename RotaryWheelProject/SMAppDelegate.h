@@ -9,7 +9,7 @@
 
 @class SMViewController;
 
-@interface SMAppDelegate : UIResponder <UIApplicationDelegate>
+@interface SMAppDelegate : NSObject <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

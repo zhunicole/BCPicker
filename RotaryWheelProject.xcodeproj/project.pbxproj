@@ -26,9 +26,9 @@
 		BDF438AD14E5638700A27135 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF438AC14E5638700A27135 /* main.m */; };
 		BDF438B114E5638700A27135 /* SMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF438B014E5638700A27135 /* SMAppDelegate.m */; };
 		BDF438B414E5638700A27135 /* SMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF438B314E5638700A27135 /* SMViewController.m */; };
-		BDF438B714E5638700A27135 /* SMViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDF438B514E5638700A27135 /* SMViewController.xib */; };
 		BDF438BF14E5641000A27135 /* SMRotaryWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF438BE14E5641000A27135 /* SMRotaryWheel.m */; };
 		BDF438C614E572EB00A27135 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDF438C514E572EB00A27135 /* QuartzCore.framework */; };
+		D13FD906198F160400A9F017 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D13FD905198F160400A9F017 /* Storyboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,11 +57,11 @@
 		BDF438B014E5638700A27135 /* SMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMAppDelegate.m; sourceTree = "<group>"; };
 		BDF438B214E5638700A27135 /* SMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMViewController.h; sourceTree = "<group>"; };
 		BDF438B314E5638700A27135 /* SMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMViewController.m; sourceTree = "<group>"; };
-		BDF438B614E5638700A27135 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SMViewController.xib; sourceTree = "<group>"; };
 		BDF438BD14E5641000A27135 /* SMRotaryWheel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMRotaryWheel.h; sourceTree = "<group>"; };
 		BDF438BE14E5641000A27135 /* SMRotaryWheel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMRotaryWheel.m; sourceTree = "<group>"; };
 		BDF438C414E56B4B00A27135 /* SMRotaryProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMRotaryProtocol.h; sourceTree = "<group>"; };
 		BDF438C514E572EB00A27135 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D13FD905198F160400A9F017 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,9 +131,9 @@
 				BD683C5214EAB964005EF069 /* assets */,
 				BDF438AF14E5638700A27135 /* SMAppDelegate.h */,
 				BDF438B014E5638700A27135 /* SMAppDelegate.m */,
+				D13FD905198F160400A9F017 /* Storyboard.storyboard */,
 				BDF438B214E5638700A27135 /* SMViewController.h */,
 				BDF438B314E5638700A27135 /* SMViewController.m */,
-				BDF438B514E5638700A27135 /* SMViewController.xib */,
 				BDF438BD14E5641000A27135 /* SMRotaryWheel.h */,
 				BDF438BE14E5641000A27135 /* SMRotaryWheel.m */,
 				BDF438A714E5638700A27135 /* Supporting Files */,
@@ -206,10 +206,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDF438AB14E5638700A27135 /* InfoPlist.strings in Resources */,
-				BDF438B714E5638700A27135 /* SMViewController.xib in Resources */,
 				BD683C5E14EAB964005EF069 /* bg.png in Resources */,
 				BD683C5F14EAB964005EF069 /* centerButton.png in Resources */,
 				BD683C6014EAB964005EF069 /* icon0.png in Resources */,
+				D13FD906198F160400A9F017 /* Storyboard.storyboard in Resources */,
 				BD683C6114EAB964005EF069 /* icon1.png in Resources */,
 				BD683C6214EAB964005EF069 /* icon2.png in Resources */,
 				BD683C6314EAB964005EF069 /* icon3.png in Resources */,
@@ -245,14 +245,6 @@
 				BDF438AA14E5638700A27135 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		BDF438B514E5638700A27135 /* SMViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BDF438B614E5638700A27135 /* en */,
-			);
-			name = SMViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -309,7 +301,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RotaryWheelProject/RotaryWheelProject-Prefix.pch";
 				INFOPLIST_FILE = "RotaryWheelProject/RotaryWheelProject-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -320,7 +314,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RotaryWheelProject/RotaryWheelProject-Prefix.pch";
 				INFOPLIST_FILE = "RotaryWheelProject/RotaryWheelProject-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
